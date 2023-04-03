@@ -6,7 +6,7 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
- plugins {
+plugins {
     id 'java'
 }
 
@@ -15,14 +15,12 @@ repositories {
 }
 
 test {
-      useJUnit()
+      useJUnitPlatform()
 }
 
 dependencies {
     
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
-    testImplementation group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'
 
 }
